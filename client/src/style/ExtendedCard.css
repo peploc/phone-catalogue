@@ -1,0 +1,111 @@
+@media only screen and (max-width: 999px) {
+  .container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+  }
+  .container > .element {
+    width: 90vw;
+  }
+
+  .container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+  }
+
+  .container .info img {
+    width: auto;
+    height: 100%;
+    margin-bottom: -15vh;
+  }
+
+  .container h2 {
+    font-size: 10vh;
+    line-height: 12vh;
+  }
+  
+  .table {
+    margin-bottom: 5vh;
+  }
+
+  .table td {
+    width: 25vw;
+    line-height: 6vh;
+  }
+
+  .table .table-definition {
+    width: 75vw;
+  }
+
+  .detail p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: newspaper;
+    margin-bottom: 3vh;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container > .element {
+    width: 40vw;
+  }
+
+  .container h2 {
+    font-size: 10vh;
+    line-height: 12vh;
+  }
+  
+  .table {
+    margin-bottom: 5vh;
+    font-size: 1.1rem;
+  }
+
+  .table td {
+    width: 10vw;
+    line-height: 3vh;
+  }
+
+  .table .table-definition {
+    width: 20vw;
+  }
+
+  .detail p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: newspaper;
+    margin-bottom: 3vh;
+  }
+
+  button:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  height: 5vh;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
